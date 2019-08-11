@@ -7,10 +7,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "NODE_ENV=production node server.js",
+    "dev": "next",
     "build": "next build",
-    "heroku-postbuild": "next build"
+    "export": "next export",
+    "deploy": "cd out && now --public",
+    "now-build": "next build  && next export -o dist"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +22,6 @@
     "next": "^9.0.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "sw-precache-webpack-plugin": "^0.11.5",
     "win-node-env": "^0.4.0"
   }
 }

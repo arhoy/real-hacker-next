@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import theme from '../styles/theme';
+
 
 const Story = ({stories}) => {
     if(!stories.length > 0) return <div> No story available </div>
